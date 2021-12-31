@@ -1,0 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+:root{
+    --organe:#ff7800;
+    --black: #0b073a;
+    --gray: #666;
+    --green: rgba(2, 136, 2, 0.918);
+    --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    --border: .2rem solid rgba(0,0,0,.1);
+    --outline: .1rem solid rgba(0,0,0,.1);
+    --outline-hover: .2rem solid var(--black);
+    --border-hover: #ff7800; 
+    --white: #fff;   
+}
+
+.contact{
+    width: 90%;
+    margin: 20px auto;
+    box-shadow: var(--box-shadow);
+    justify-content: center;
+    align-items: center;
+}
+.contact > .form-col{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 1.5rem;
+}
+.contact h3{
+    color: #0b073a;
+    text-align: center;
+    font-size: 25px;
+    padding: 20px 0px;
+}
+.contact h3 span{
+    background: var(--organe);
+    color: var(--white);
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    font-size: 16px;
+    clip-path: polygon(100% 0,93% 50%,100% 99%, 0% 99%,7% 50%,0% 0%);
+}
+.form-col > .form-group p{
+    text-align: center;
+    color: #fff;
+    font-size: 19px;
+}
+#form-group{
+    display: flex;
+    flex-direction: column;
+}
+#form-group h3 , i{
+    color: #ff7800;
+}
+#form-group h3{
+    color: var(--gray);
+}
+#form-group .share a{
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;border-radius: .5rem;
+    font-size: 2rem;color: var(--black);
+    margin-left: 0.2rem;
+    background: #eee;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#form-group .share a:hover{
+    background: var(--organe);
+    color: #fff;
+}
+form{
+    margin: 20px;
+    height: 380px;
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+    width: 100%;
+}
+form > .form-control{
+    display: flex;
+    flex-direction: column;
+    /* padding-top: 10px; */
+    justify-content: center;
+    align-items: center;
+}
+form > .form-control label, input, textarea{
+    width: 300px;
+    height: 50px;
+    padding-top: 15px;
+}
+
+form > .form-control input, textarea{
+    border-bottom: 1px solid #ff7800;
+}
+
+form > .form-control input[type="text"],input[type="email"],
+textarea[type="text"]{
+    font-size: 10px;
+    text-align: center;
+}
